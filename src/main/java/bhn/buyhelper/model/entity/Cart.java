@@ -1,4 +1,4 @@
-package com.bn.buyerhelper.model.entity;
+package bhn.buyhelper.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +22,7 @@ public class Cart {
     @GenericGenerator(
             name = "cartIdGen",
             parameters = @Parameter(name = "prefix", value = "CART"),
-            strategy = "com.bn.buyerhelper.utils.IdGenerator"
+            strategy = "bhn.buyhelper.utils.IdGenerator"
     )
     private String cardId;
 

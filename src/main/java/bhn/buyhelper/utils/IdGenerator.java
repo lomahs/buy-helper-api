@@ -1,4 +1,4 @@
-package com.bn.buyerhelper.utils;
+package bhn.buyhelper.utils;
 
 import org.hibernate.HibernateException;
 import org.hibernate.MappingException;

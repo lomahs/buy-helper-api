@@ -1,4 +1,4 @@
-package com.bn.buyerhelper.model.entity;
+package bhn.buyhelper.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
@@ -26,7 +26,7 @@ public class Category {
     @GenericGenerator(
             name = "catIdGen",
             parameters = @Parameter(name = "prefix", value = "CAT"),
-            strategy = "com.bn.buyerhelper.utils.IdGenerator"
+            strategy = "bhn.buyhelper.utils.IdGenerator"
     )
     private String catId;
 

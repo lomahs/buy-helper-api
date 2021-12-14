@@ -1,4 +1,4 @@
-package com.bn.buyerhelper.model.entity;
+package bhn.buyhelper.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;

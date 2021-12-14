@@ -1,4 +1,4 @@
-package com.bn.buyerhelper.model.entity;
+package bhn.buyhelper.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
@@ -23,7 +23,7 @@ public class Product {
     @GenericGenerator(
             name = "productIdGen",
             parameters = @Parameter(name = "prefix", value = "P"),
-            strategy = "com.bn.buyerhelper.utils.IdGenerator"
+            strategy = "bhn.buyhelper.utils.IdGenerator"
     )
     private String productId;
 

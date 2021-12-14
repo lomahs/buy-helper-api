@@ -1,4 +1,4 @@
-package com.bn.buyerhelper.model.entity;
+package bhn.buyhelper.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,8 +20,8 @@ public class OrderDetail {
     @GeneratedValue(generator = "ordIdGen")
     @GenericGenerator(
             name = "ordIdGen",
-            parameters = @Parameter(name = "prefix", value = "OD"),
-            strategy = "com.bn.buyerhelper.utils.IdGenerator"
+            parameters = @Parameter(name = "prefix", value = "ORD"),
+            strategy = "bhn.buyhelper.utils.IdGenerator"
     )
     private String orderDetailId;
 
