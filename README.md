@@ -1,1 +1,1 @@
-# buyer-helper
+# buy-helper
