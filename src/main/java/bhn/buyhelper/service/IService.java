@@ -1,11 +1,12 @@
 package bhn.buyhelper.service;
 
-import java.util.List;
 import java.util.Optional;
+
+import org.springframework.data.domain.Page;
 
 public interface IService<T, K> {
 
-    List<T> getAll();
+    Page<T> getByPage(int page, int itemNumber);
 
     Optional<T> getById(K key);
 
