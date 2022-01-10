@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 services:
   app:
     build: .
@@ -11,6 +11,7 @@ services:
  
   appdb:
     image: mysql:latest
+    pull_policy: missing
     networks:
       - app-server
     environment:
