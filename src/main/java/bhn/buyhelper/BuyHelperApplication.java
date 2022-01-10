@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BuyHelperApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BuyHelperApplication.class, args);
+        try {
+            Thread.sleep(15 * 1000);
+            SpringApplication.run(BuyHelperApplication.class, args);
+        } catch (Exception e) {
+        }
     }
 
 }

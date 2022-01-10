@@ -1,0 +1,20 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - app-server
+    depends_on:
+      - appdb
+ 
+  appdb:
+    image: mysql:latest
+    networks:
+      - app-server
+    environment:
+      - MYSQL_ROOT_PASSWORD=Abc12345!  
+
+networks:
+  app-server:
